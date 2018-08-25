@@ -1,0 +1,44 @@
+@import "variables";
+@import "~ui/less/variables.less";
+@import '~normalize.css/normalize.css';
+
+.appWrapper {
+  width: 100%;
+  margin: 0 auto;  
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  box-sizing: border-box;
+
+  @media @on-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  @media @up-mobile {
+    height: 100%;   
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  strong {
+    font-weight: 600;
+  }
+  
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+  }
+
+  figure {
+    margin: 0;
+  }
+}
